@@ -1,5 +1,4 @@
-# Accounts Payable Management API
-
+# Desafio Técnico: API de Gestão de Contas a Pagar
 Desenvolvido por **Eduardo Gavronski Neto**
 
 API REST para gestão de contas a pagar, com processamento assíncrono de importação via Kafka, persistência em PostgreSQL e autenticação JWT.
