@@ -59,11 +59,8 @@ class CsvImportConsumerTest {
 
     @Test
     void shouldIgnoreLineWithNegativeAmount() {
-        Supplier supplier = new Supplier("Supplier");
         String csv = HEADER
                 + "2025-01-10,-50.00,Rent,1\n";
-
-        when(supplierRepository.findById(1L)).thenReturn(Optional.of(supplier));
 
         consumer.consume(new CsvImportMessageDTO(UUID.randomUUID(), csv));
 
